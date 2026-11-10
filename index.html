@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D&A Butter Momos | Rohini Sector 21, Delhi</title>
+<meta name="description" content="D&A Butter Momos - Rohini Sector 21. Famous Butter Momos, Tandoori Momos, Veg Burgers & Rolls. 4.9 Rated. Order on WhatsApp.">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="topbar">4.9 Star Rated on Google | 100% Veg | Delivery Available | Open Today 2 PM - 10:30 PM</div>
+<header class="nav">
+  <div class="logo">D&A <span>Butter Momos</span></div>
+  <nav><a href="#menu">Menu</a><a href="#bestseller">Bestsellers</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit Us</a></nav>
+  <a class="btn" href="https://wa.me/919205097243?text=Hi%20D%26A%20Butter%20Momos!%20I%20want%20to%20order." target="_blank">Order on WhatsApp</a>
+</header>
+<section class="hero">
+  <div class="hero-text">
+    <div class="badge">ROHINI - SECTOR 21 - DELHI</div>
+    <h1>Butter Momos jo<br><span>yaad rahenge.</span></h1>
+    <p>Steam se lekar Tandoori tak. Creamy butter, teekhi red chutney aur garam-garam momos - seedha aapke ghar tak. 100% Veg, fresh daily.</p>
+    <div class="hero-stats"><div><b>4.9 Star</b><span>29 Google Reviews</span></div><div><b>2 PM - 10:30 PM</b><span>Open All 7 Days</span></div><div><b>Delivery Only</b><span>Hot &amp; Fast</span></div></div>
+    <div class="hero-btns"><a class="btn big" href="https://wa.me/919205097243?text=Hi!%20I%20want%20to%20order%20Butter%20Momos" target="_blank">Order on WhatsApp</a><a class="btn ghost" href="#menu">View Menu</a></div>
+    <p class="note">Demo Website - Menu prices apne real menu se change kiye ja sakte hai.</p>
+  </div>
+  <div class="hero-img"><img src="images/shop-main.jpg" alt="D&A Butter Momos Shop - Rohini"><div class="float-card"><b>Bestseller</b><span>Butter Momos - Creamy &amp; Hot</span></div></div>
+</section>
+<section id="bestseller" class="section">
+  <h2>Our Bestsellers</h2>
+  <p class="sub">Jo log baar-baar mangate hai</p>
+  <div class="cards">
+    <div class="card"><img src="images/food-butter-cheese.jpg"><div class="card-body"><h3>Butter Momos (8 pc)</h3><p>Creamy butter sauce, coriander, soft steamed momos.</p><div class="price"><span>Rs 99</span><button onclick="addToOrder('Butter Momos (8 pc) - Rs 99')">+ Add</button></div></div></div>
+    <div class="card"><img src="images/food-steam.jpg"><div class="card-body"><h3>Steam Veg Momos (8 pc)</h3><p>Classic steamed momos + spicy red chutney.</p><div class="price"><span>Rs 69</span><button onclick="addToOrder('Steam Veg Momos (8 pc) - Rs 69')">+ Add</button></div></div></div>
+    <div class="card"><img src="images/food-tandoori.jpg"><div class="card-body"><h3>Tandoori Momos (8 pc)</h3><p>Char-grilled, smoky, mint chutney + onion rings.</p><div class="price"><span>Rs 119</span><button onclick="addToOrder('Tandoori Momos (8 pc) - Rs 119')">+ Add</button></div></div></div>
+  </div>
+</section>
+<section id="menu" class="section light">
+  <h2>Full Menu</h2>
+  <p class="sub">Kuch bhi select karo, neeche WhatsApp pe order ban jayega</p>
+  <div class="tabs"><button class="tab active" onclick="showMenu('momos',this)">Momos</button><button class="tab" onclick="showMenu('burgers',this)">Burgers &amp; Rolls</button><button class="tab" onclick="showMenu('chinese',this)">Chinese &amp; North Indian</button></div>
+  <div id="menu-momos" class="menu-grid">
+    <div class="menu-item"><div><b>Veg Steam Momos (8 pc)</b><span>Spicy red chutney</span></div><b>Rs 69</b><button onclick="addToOrder('Veg Steam Momos - Rs 69')">Add +</button></div>
+    <div class="menu-item"><div><b>Butter Momos (8 pc)</b><span>Our signature creamy butter</span></div><b>Rs 99</b><button onclick="addToOrder('Butter Momos - Rs 99')">Add +</button></div>
+    <div class="menu-item"><div><b>Tandoori Momos (8 pc)</b><span>Smoky, char-grilled</span></div><b>Rs 119</b><button onclick="addToOrder('Tandoori Momos - Rs 119')">Add +</button></div>
+    <div class="menu-item"><div><b>Peri Peri Momos (8 pc)</b><span>Spicy peri peri coating</span></div><b>Rs 109</b><button onclick="addToOrder('Peri Peri Momos - Rs 109')">Add +</button></div>
+    <div class="menu-item"><div><b>Fried Momos (8 pc)</b><span>Crispy golden fried</span></div><b>Rs 89</b><button onclick="addToOrder('Fried Momos - Rs 89')">Add +</button></div>
+    <div class="menu-item"><div><b>Paneer Tikka Momos (8 pc)</b><span>Paneer stuffing, tikka masala</span></div><b>Rs 129</b><button onclick="addToOrder('Paneer Tikka Momos - Rs 129')">Add +</button></div>
+  </div>
+  <div id="menu-burgers" class="menu-grid hidden">
+    <div class="menu-item"><div><b>Veg Burger</b><span>Crispy patty, sauces</span></div><b>Rs 59</b><button onclick="addToOrder('Veg Burger - Rs 59')">Add +</button></div>
+    <div class="menu-item"><div><b>Paneer Burger</b><span>Paneer patty + cheese</span></div><b>Rs 89</b><button onclick="addToOrder('Paneer Burger - Rs 89')">Add +</button></div>
+    <div class="menu-item"><div><b>Veg Roll</b><span>Stuffed roll, chutney</span></div><b>Rs 69</b><button onclick="addToOrder('Veg Roll - Rs 69')">Add +</button></div>
+    <div class="menu-item"><div><b>Paneer Roll</b><span>Paneer + onion + mint</span></div><b>Rs 99</b><button onclick="addToOrder('Paneer Roll - Rs 99')">Add +</button></div>
+  </div>
+  <div id="menu-chinese" class="menu-grid hidden">
+    <div class="menu-item"><div><b>Veg Chowmein</b><span>Street style</span></div><b>Rs 89</b><button onclick="addToOrder('Veg Chowmein - Rs 89')">Add +</button></div>
+    <div class="menu-item"><div><b>Chilli Paneer</b><span>Indo-Chinese special</span></div><b>Rs 129</b><button onclick="addToOrder('Chilli Paneer - Rs 129')">Add +</button></div>
+    <div class="menu-item"><div><b>Veg Manchurian</b><span>With gravy / dry</span></div><b>Rs 109</b><button onclick="addToOrder('Veg Manchurian - Rs 109')">Add +</button></div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Asli Photos - Hamari Shop Se</h2>
+  <p class="sub">Jo photo me dikhta hai, wahi plate me aata hai</p>
+  <div class="gallery-grid">
+    <div class="g-item"><img src="images/food-fried-1.jpg"><span>Fried Momos + Chutney</span></div>
+    <div class="g-item"><img src="images/food-fried-2.jpg"><span>Fried Momos + Mayo</span></div>
+    <div class="g-item"><img src="images/food-fried-3.jpg"><span>Hot Fried Momos</span></div>
+    <div class="g-item"><img src="images/food-tandoori.jpg"><span>Tandoori Momos</span></div>
+    <div class="g-item"><img src="images/food-butter-cheese.jpg"><span>Butter Cheese Momos</span></div>
+    <div class="g-item"><img src="images/food-combo.jpg"><span>Combo - Noodles + Momos</span></div>
+    <div class="g-item"><img src="images/food-steam.jpg"><span>Steam Momos</span></div>
+    <div class="g-item"><img src="images/food-pasta-momos.jpg"><span>Special Platter</span></div>
+  </div>
+</section>
+
+<section id="fullmenu" class="section light">
+  <h2>Full Menu Card</h2>
+  <p class="sub">Shop ka asli menu - zoom karke dekho</p>
+  <div class="menu-card-wrap">
+    <img src="images/menu-card.jpg" alt="D&A Full Menu Card">
+    <img src="images/poster.jpg" alt="D&A Butter Momos Poster">
+  </div>
+  <p class="center" style="margin-top:14px"><a class="btn" href="https://wa.me/919205097243?text=Hi!%20Mujhe%20menu%20se%20order%20karna%20hai" target="_blank">Menu Se Order Karo</a></p>
+</section>
+
+<section id="reviews" class="section">
+  <h2>Google Reviews - 4.9 Star</h2>
+  <div class="reviews">
+    <div class="rev"><div>★★★★★</div><p>Butter momos are amazing, creamy and fresh. Best in Rohini!</p><b>- Google Customer</b></div>
+    <div class="rev"><div>★★★★★</div><p>Tandoori momos + chutney is next level. Delivery was quick and hot.</p><b>- Google Customer</b></div>
+    <div class="rev"><div>★★★★★</div><p>Clean, tasty and budget friendly. My regular evening spot now.</p><b>- Google Customer</b></div>
+  </div>
+  <p class="center"><a href="https://maps.app.goo.gl/9VgrjPhZuaSpNcDp9" target="_blank">Read all 29 reviews on Google</a></p>
+</section>
+<section id="visit" class="section light visit">
+  <div><h2>Visit / Order</h2><p><b>Address:</b> 57, Pocket 5, Sector 21, Rohini, New Delhi - 110086, Delhi, India</p><p><b>Timing:</b> Every Day - 2:00 PM to 10:30 PM</p><p><b>Phone / WhatsApp:</b> +91 92050 97243</p><p><b>Service:</b> Delivery Only - Takeaway &amp; Home Delivery</p><div class="hero-btns"><a class="btn big" href="https://wa.me/919205097243" target="_blank">Order on WhatsApp</a><a class="btn ghost" href="https://maps.app.goo.gl/9VgrjPhZuaSpNcDp9" target="_blank">Open in Google Maps</a></div></div>
+  <div class="visit-img"><img src="images/poster.jpg"><p>Fresh, hot, and made to order.</p></div>
+</section>
+<div id="cart"><span id="cart-count">0 items</span> <button onclick="checkout()">Order on WhatsApp</button></div>
+<footer>© 2026 D&A Butter Momos | Demo Website by KatariyaDigital | Menu prices can be updated anytime | <a href="https://maps.app.goo.gl/9VgrjPhZuaSpNcDp9">Google Maps</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
